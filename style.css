@@ -1,0 +1,259 @@
+/* css Reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 69px;
+}
+
+/* Navigation Bar  */
+
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(28, 23, 23);
+    position: absolute;
+    height: 98%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+}
+
+/* Navigation Bar: logo and image  */
+
+#logo {
+    margin: 34px 30px;
+}
+
+#logo img {
+    height: 85px;
+    width: 142px;
+    margin: -35px -15px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Adamina', serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+
+#navbar ul li a {
+    color: rgb(255, 253, 253);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(24, 18, 18);
+    background-color: rgb(255, 255, 255);
+
+}
+
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 482px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Zilla Slab', serif;
+}
+
+#home::before {
+    content: "";
+    background: url('../bg 2.jpg') no-repeat center center/cover;
+    /* background: url("img/bg 2.jpg") no-repeat center center/cover; */
+    background-blend-mode: darken;
+    position: absolute;
+    height: 542px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.98;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    color: rgb(255, 253, 253);
+    text-align: center;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Source Serif Pro', serif;
+    margin-bottom: 15px;
+}
+
+#home p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Amiri', serif;
+    /* font-family: 'Merienda', cursive; */
+}
+
+/* Services Section  */
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 3px solid brown;
+    padding: 20px;
+    margin: 20px 22px;
+    border-radius: 75px;
+    background-color: rgb(239, 238, 238);
+}
+
+#services .box img {
+    height: 190px;
+    width:185px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Amiri', serif;
+
+}
+
+/* Cilents Section  */
+.h-primary center{
+color: white;
+}
+#client-section {
+    margin-top: 50px;
+    height: 344px;
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../bg 2.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.5; 
+
+}
+
+#clients {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 20px;
+
+}
+
+#clients img {
+    height: 124px;
+}
+/* Contact section  */
+#contact {
+    position: relative;
+}
+
+#contact::before{
+    content :"";
+    position :absolute;
+    width:100%;
+    height:105%;
+    z-index:-1;
+    /* opacity:0.6; */
+    background: url('../contact2.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin: 28px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    /* justify-content: center;
+    text-align: center; */
+}
+
+#contact-box form{
+    width:30%;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Source Serif Pro', serif;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 12px;
+}
+/* Utility Classes */
+.h-primary {
+    /* font-family: 'Merienda', cursive; */
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2.9rem;
+    padding: 2px;
+    margin:-19px;
+    color: rgb(31, 26, 26);
+}
+
+.h-secondary {
+    /* font-family: 'Merienda', cursive; */
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.7rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 1px 18px;
+    border: 2px solid rgb(255, 252, 252);
+    background-color: rgb(231, 235, 223);
+    color: rgb(16, 15, 15);
+    margin: 38px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+    
+}
